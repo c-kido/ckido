@@ -33,6 +33,10 @@
             txtStudentName = new TextBox();
             lstOut = new ListBox();
             btnSubmit = new Button();
+            txtGPA = new TextBox();
+            label3 = new Label();
+            btnClear = new Button();
+            btnQuit = new Button();
             SuspendLayout();
             // 
             // label1
@@ -67,25 +71,64 @@
             // 
             lstOut.FormattingEnabled = true;
             lstOut.ItemHeight = 15;
-            lstOut.Location = new Point(111, 180);
+            lstOut.Location = new Point(111, 214);
             lstOut.Name = "lstOut";
-            lstOut.Size = new Size(539, 94);
-            lstOut.TabIndex = 3;
+            lstOut.Size = new Size(623, 124);
+            lstOut.TabIndex = 5;
+            lstOut.TabStop = false;
             // 
             // btnSubmit
             // 
-            btnSubmit.Location = new Point(122, 326);
+            btnSubmit.Location = new Point(122, 384);
             btnSubmit.Name = "btnSubmit";
             btnSubmit.Size = new Size(75, 23);
-            btnSubmit.TabIndex = 4;
-            btnSubmit.Text = "Submit";
+            btnSubmit.TabIndex = 6;
+            btnSubmit.Text = "&Submit";
             btnSubmit.UseVisualStyleBackColor = true;
+            // 
+            // txtGPA
+            // 
+            txtGPA.Location = new Point(220, 128);
+            txtGPA.Name = "txtGPA";
+            txtGPA.Size = new Size(359, 23);
+            txtGPA.TabIndex = 4;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Location = new Point(111, 131);
+            label3.Name = "label3";
+            label3.Size = new Size(73, 15);
+            label3.TabIndex = 3;
+            label3.Text = "Student GPA";
+            // 
+            // btnClear
+            // 
+            btnClear.Location = new Point(372, 384);
+            btnClear.Name = "btnClear";
+            btnClear.Size = new Size(75, 23);
+            btnClear.TabIndex = 7;
+            btnClear.Text = "&Clear";
+            btnClear.UseVisualStyleBackColor = true;
+            // 
+            // btnQuit
+            // 
+            btnQuit.Location = new Point(659, 384);
+            btnQuit.Name = "btnQuit";
+            btnQuit.Size = new Size(75, 23);
+            btnQuit.TabIndex = 8;
+            btnQuit.Text = "Quit";
+            btnQuit.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(btnQuit);
+            Controls.Add(btnClear);
+            Controls.Add(txtGPA);
+            Controls.Add(label3);
             Controls.Add(btnSubmit);
             Controls.Add(lstOut);
             Controls.Add(txtStudentName);
@@ -104,5 +147,9 @@
         private TextBox txtStudentName;
         private ListBox lstOut;
         private Button btnSubmit;
+        private TextBox txtGPA;
+        private Label label3;
+        private Button btnClear;
+        private Button btnQuit;
     }
 }
